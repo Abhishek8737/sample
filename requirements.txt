@@ -1,0 +1,7 @@
+flask-migrate
+flask-restful
+mysqlclient
+requests
+uwsgi
+flask-redis
+Flask-OpenID
