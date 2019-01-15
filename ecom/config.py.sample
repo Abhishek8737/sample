@@ -1,1 +1,23 @@
 #sample secrets
+ENV = ''  # default
+DEBUG = True  # default False if ENV = production
+SECRET_KEY = ''
+
+# SQLAlchemy
+DB_USER = ''
+DB_PASSWORD = ''
+DB_HOST = ''
+DB_NAME = ''
+# SQLALCHEMY_DATABASE_URI = 'mysql://<username>:<password>@<host>/<database>'
+SQLALCHEMY_DATABASE_URI = 'mysql://%s:%s@%s/%s' % (DB_USER, DB_PASSWORD, DB_HOST, DB_NAME)
+SQLALCHEMY_TRACK_MODIFICATIONS = False
+SQLALCHEMY_POOL_RECYCLE = 600
+SQLALCHEMY_RECORD_QUERIES = True
+
+
+# redis
+REDIS_HOST = ''
+REDIS_PORT =
+REDIS_DECODE_RESPONSES = True
+REDIS_DB = ''
+REDIS_URL = 'redis://:@%s:%s/%s' % (REDIS_HOST, REDIS_PORT, REDIS_DB)

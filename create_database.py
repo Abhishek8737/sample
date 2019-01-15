@@ -1,4 +1,4 @@
-from subscriptions import app
+from ecom import app
 from sqlalchemy import create_engine
 import time
 
