@@ -48,3 +48,4 @@ __import__('ecom.routes')
 _init_db(app)
 _init_cache(app)
 _init_routes(app)
+

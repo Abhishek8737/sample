@@ -4,4 +4,4 @@ from ecom.managers import StatusManager
 
 class StatusController(BaseController):
     def get(self):
-        return StatusManager.check_status()
+    	return StatusManager.check_status()
