@@ -1,1 +1,1 @@
-uwsgi --uwsgi-socket 0.0.0.0:8080 -b 32768 --protocol=http -w subscriptiontx:app -p 4 -O 2 --py-autoreload 1
+uwsgi --uwsgi-socket 0.0.0.0:8080 -b 32768 --protocol=http -w ecom:app -p 4 -O 2 --py-autoreload 1
